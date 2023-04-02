@@ -1,0 +1,20 @@
+# ==============================================
+#
+#  Before starting the application
+#  rename the application-local.yaml.template
+#  to application-local.yaml
+#  and add the specific local configurations
+#
+# ==============================================
+spring:
+  profiles:
+    include: base,local
+server:
+  port: 8081
+docker:
+  host: <your-docker-host>
+  cert-path: <your-cert-path>
+  username: <your-username>
+  registry-url: <your-registry-url>
+
+
